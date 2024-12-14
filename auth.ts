@@ -6,6 +6,7 @@ import { AUTHOR_BY_GITHUB_ID_QUERY } from "./sanity/lib/queries"
 import { writeClient } from "./sanity/lib/write-client"
  
 export const { handlers, auth, signIn, signOut } = NextAuth({
+  secret: process.env.AUTH_SECRET,
   providers: [GitHub],
   callbacks: {
 
@@ -31,7 +32,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           image,
           bio: bio || ''
         })
-        
+
         return true
       }
     },
