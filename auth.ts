@@ -32,9 +32,9 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           image,
           bio: bio || ''
         })
-
-        return true
       }
+
+      return true
     },
 
     // triggered whenever a new JSON Web Token (JWT) is created
