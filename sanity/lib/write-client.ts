@@ -7,7 +7,7 @@ export const writeClient = createClient({
   dataset,
   apiVersion,
   useCdn: false, 
-  token,
+  token: process.env.SANITY_WRITE_TOKEN
 })
 
 // .config: retrieves the current configuration of the Sanity client
