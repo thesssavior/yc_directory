@@ -43,6 +43,18 @@ export const startup = defineType({
             name: "pitch",
             type: "markdown"
         }),
+        defineField({
+            name: "lessons",
+            type: "array",
+            title: "Lessons",
+            of: [
+                defineField({
+                    name: "lesson",
+                    type: "reference",
+                    to: { type: "lesson" },
+              }),
+            ],
+          }),      
     ],
     preview: {
         select: {

@@ -9,7 +9,7 @@ export type StartupTypeCard = Omit<Startup, "author"> & {author?: Author}
 
 const StartupCard = ({post}: { post: StartupTypeCard}) => {
     const { _createdAt, views, author, _id, title, image, category, description } = post;
-  return (
+    return (
         <li className="startup-card group">
             <div className="flex-between">
                 <p className="startup_card_date">

@@ -15,7 +15,7 @@ export default async function Home({searchParams}:
 
   return (
     <>
-      <section className="pink_container" style={{background: "linear-gradient(to right, #eda597, #759b46)"}}>
+      <section className="pink_container" style={{background: "linear-gradient(to right, #759b46, #eda597)"}}>
         <h1 className="heading">Kompass</h1>
         <p className="sub-heading !max-w-3xl">
           Korean language classes for foreigners in Ansan
@@ -25,7 +25,7 @@ export default async function Home({searchParams}:
 
       <section className="section_container">
         <p className="text-30-semibold">
-          {query ? `Search results for ${query}` : "All Startups"}
+          {query ? `Search results for ${query}` : "All Classes"}
         </p>
         
         <ul className="mt-7 card_grid">
@@ -34,7 +34,7 @@ export default async function Home({searchParams}:
               <StartupCard key={post?._id} post={post} />
             ))
           ) : (
-            <p className="no-results">No startups found</p>
+            <p className="no-results">No classes found</p>
           )}
         </ul>
 

@@ -19,7 +19,7 @@ const page = async ({params}: {params: Promise<{id: string}>}) => {
     const parsedContent = md.render(post?.pitch || '');
     return (
         <>
-            <section className='pink_container !min-h-[230px]' style={{background: "linear-gradient(to right, #eda597, #759b46)"}}>
+            <section className='pink_container !min-h-[230px]' style={{background: "linear-gradient(to right, #759b46, #eda597)"}}>
                 <p className='tag'>{formatDate(post?._createdAt)}</p>
                 <h1 className='heading'>{post.title}</h1>
                 <p className='subheading !max-w-5xl'>{post.description}</p>
@@ -43,7 +43,7 @@ const page = async ({params}: {params: Promise<{id: string}>}) => {
                         </Link>
                         <p className='category-tag'>{post.category}</p>
                     </div>
-                    <h3 className='text-30-bold'>Startup Details</h3>
+                    <h3 className='text-30-bold'>Class Details</h3>
                     {parsedContent? (
                         <article 
                             className='prose max-w-4xl font-work-sans break-all' 

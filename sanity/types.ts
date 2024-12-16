@@ -134,10 +134,13 @@ export type Startup = {
   title?: string;
   slug?: Slug;
   author?: {
-    _ref: string;
-    _type: "reference";
-    _weak?: boolean;
-    [internalGroqTypeReferenceTo]?: "author";
+    _id: string;
+    name: string;
+    image: string;
+    // _ref: string;
+    // _type: "reference";
+    // _weak?: boolean;
+    // [internalGroqTypeReferenceTo]?: "author";
   };
   views?: number;
   description?: string;

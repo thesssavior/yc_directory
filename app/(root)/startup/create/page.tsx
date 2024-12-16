@@ -9,7 +9,7 @@ const Page = async () => {
 
   return (
     <>
-      <section className="pink_container !min-h-[230px]">
+      <section className="pink_container !min-h-[230px]" style={{background: "linear-gradient(to right, #759b46, #eda597)"}}>
         <h1 className="heading">Submit Your Startup</h1>
       </section>
 
