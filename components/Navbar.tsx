@@ -74,7 +74,7 @@ const Navbar = async () => {
             >
 
               <Button className="flex gap-2 items-center text-white bg-primary hover:bg-secondary focus:ring-2 rounded-lg me-2 focus:outline-none">
-              <span className="max-sm:hidden text-base">Login</span>
+              <span className="text-base">Login</span>
                 <LogIn className="size-6 max-sm:hidden" />
               </Button>
             </form>
